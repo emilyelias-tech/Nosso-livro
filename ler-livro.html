@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lendo livro</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <main class="livro">
+
+        <section class="pagina ativa">
+
+            <div class="folha">
+
+                <span
+                    class="numero"
+                    id="numeroPagina">
+
+                    1
+
+                </span>
+
+
+
+                <h1 id="tituloLivro"></h1>
+
+
+                <div class="linha"></div>
+
+
+                <p
+                    class="autor-leitura"
+                    id="autorLivro">
+                </p>
+
+
+                <div
+                    class="conteudo-livro"
+                    id="conteudoLivro">
+                </div>
+
+
+                <div class="navegacao">
+
+                    <button
+                        onclick="voltarBiblioteca()">
+
+                        ←
+
+                    </button>
+
+
+                    <span>
+                        Nossos Livros
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="ler-livro.js"></script>
+
+</body>
+
+</html>

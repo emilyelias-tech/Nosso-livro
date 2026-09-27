@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nossos livros</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <main class="biblioteca">
+
+        <section class="biblioteca-topo">
+
+            <div class="decoracao">
+                ✦ ♡ ✦
+            </div>
+
+            <h1>
+                Nossos livros
+            </h1>
+
+            <div class="linha"></div>
+
+            <p id="mensagemUsuario"></p>
+            <br>
+            <p>Mor caso queira apagar um livro, apenas segura ele, que ai apaga</p>
+            <br>
+
+
+            <div id="listaLivros" class="lista-livros"></div>
+
+        </section>
+
+
+        <section class="acoes-biblioteca">
+
+            <button onclick="criarLivro()">
+                + Criar livro
+            </button>
+
+        </section>
+
+                <section class="acoes-biblioteca">
+
+                    <a href="index.html">
+            <button>
+                Voltar pra login
+            </button>
+            </a>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+    <script src="biblioteca.js"></script>
+</body>
+
+</html>

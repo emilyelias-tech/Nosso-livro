@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Criar Livro</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <main class="criar-container">
+
+        <section class="folha-criar">
+
+            <p class="capitulo">
+                NOVA HISTÓRIA
+            </p>
+
+            <h1>
+                Criar meu livro
+            </h1>
+
+            <div class="linha"></div>
+
+
+            <label for="titulo">
+                Título
+            </label>
+
+            <input
+                type="text"
+                id="titulo"
+                placeholder="Digite o título do livro"
+            >
+
+
+            <label for="conteudo">
+                História
+            </label>
+
+            <textarea
+                id="conteudo"
+                placeholder="Escreva sua história aqui..."
+            ></textarea>
+
+
+            <div class="botoes-criar">
+
+                <button onclick="publicarLivro()">
+                    Publicar livro
+                </button>
+
+                <button
+                    class="botao-voltar"
+                    onclick="voltarBiblioteca()">
+
+                    Voltar
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="criar-livro.js"></script>
+</body>
+
+</html>

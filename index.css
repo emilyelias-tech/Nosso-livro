@@ -1,0 +1,940 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("fundo-index.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    color: #3a263d;
+
+    overflow-x: hidden;
+}
+
+
+/* ============================= */
+/* BOTÕES */
+/* ============================= */
+
+button {
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    background: #94167f;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background: #d34fc0;
+
+    transform: scale(1.05);
+}
+
+
+/* ============================= */
+/* LOGIN */
+/* ============================= */
+
+.login-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+.login-card {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 60px 50px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(45, 15, 54, 0.95),
+            rgba(123, 53, 143, 0.9)
+        );
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.45);
+
+    border:
+        2px solid rgba(255, 255, 255, 0.15);
+}
+
+
+.decoracao {
+    font-size: 25px;
+
+    margin-bottom: 20px;
+
+    letter-spacing: 10px;
+}
+
+
+.subtitulo {
+    font-size: 14px;
+
+    letter-spacing: 6px;
+
+    margin-bottom: 20px;
+
+    opacity: 0.85;
+}
+
+
+.login-card h1 {
+    font-size: 48px;
+
+    margin-bottom: 15px;
+
+    text-shadow:
+        3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.linha {
+    width: 100px;
+
+    height: 2px;
+
+    background: #b6259e;
+
+    margin: 20px auto;
+}
+
+
+.login-texto {
+    font-size: 16px;
+
+    margin-bottom: 25px;
+
+    opacity: 0.9;
+}
+
+
+.login-card input {
+    width: 100%;
+
+    padding: 14px;
+
+    margin: 8px 0;
+
+    border: none;
+
+    border-radius: 30px;
+
+    outline: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+}
+
+
+.login-card button {
+    margin-top: 20px;
+}
+
+
+/* ============================= */
+/* BIBLIOTECA */
+/* ============================= */
+
+.biblioteca {
+    width: 100%;
+
+    min-height: 100vh;
+
+    padding: 50px 30px;
+}
+
+
+.biblioteca-topo {
+    max-width: 1000px;
+
+    margin: 0 auto 40px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(45, 15, 54, 0.568),
+            rgba(123, 53, 143, 0.9)
+        );
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.45);
+
+    border:
+        2px solid rgba(255, 255, 255, 0.15);
+}
+
+
+.biblioteca-topo h1 {
+    font-size: 55px;
+
+    text-shadow:
+        3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.biblioteca-topo .linha {
+    margin: 20px auto;
+}
+
+
+#mensagemUsuario {
+    font-size: 16px;
+
+    opacity: 0.9;
+}
+
+
+/* ============================= */
+/* ESTANTE */
+/* ============================= */
+
+.estante {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+.lista-livros {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 35px;
+
+    justify-items: center;
+}
+
+
+/* ============================= */
+/* MINI LIVRO */
+/* ============================= */
+
+.livro-card {
+    width: 230px;
+
+    text-align: center;
+}
+
+
+.mini-capa {
+    width: 230px;
+
+    min-height: 330px;
+
+    padding: 35px 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(45, 15, 54, 0.97),
+            rgba(123, 53, 143, 0.92)
+        );
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.45);
+
+    border:
+        2px solid rgba(255, 255, 255, 0.15);
+
+    cursor: pointer;
+
+    user-select: none;
+
+    transition: 0.3s;
+}
+
+
+.mini-capa:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+
+.mini-decoracao {
+    font-size: 18px;
+
+    margin-bottom: 18px;
+
+    letter-spacing: 6px;
+}
+
+
+.mini-subtitulo {
+    font-family: Arial, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+
+    opacity: 0.85;
+}
+
+
+.mini-capa h2 {
+    font-size: 28px;
+
+    line-height: 1.2;
+
+    word-break: break-word;
+
+    text-shadow:
+        2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+
+.mini-linha {
+    width: 60px;
+
+    height: 2px;
+
+    background: #b6259e;
+
+    margin: 18px auto;
+}
+
+
+.mini-capa p {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    opacity: 0.85;
+}
+
+
+.mini-coracao {
+    font-size: 28px;
+
+    margin-top: 25px;
+}
+
+
+/* ============================= */
+/* BOTÃO LER */
+/* ============================= */
+
+.botao-ler {
+    margin-top: 15px;
+}
+
+
+/* ============================= */
+/* BIBLIOTECA VAZIA */
+/* ============================= */
+
+.biblioteca-vazia {
+    grid-column: 1 / -1;
+
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 30px auto;
+
+    padding: 45px 30px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(45, 15, 54, 0.92),
+            rgba(123, 53, 143, 0.88)
+        );
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+
+.livro-vazio {
+    font-size: 55px;
+
+    margin-bottom: 20px;
+}
+
+
+.biblioteca-vazia p {
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+
+.biblioteca-vazia span {
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    opacity: 0.8;
+}
+
+
+/* ============================= */
+/* AÇÕES DA BIBLIOTECA */
+/* ============================= */
+
+.acoes-biblioteca {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 45px;
+}
+
+
+/* ============================= */
+/* LIVRO / LEITURA */
+/* ============================= */
+
+.livro {
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+.pagina {
+    width: 100%;
+
+    max-width: 850px;
+
+    min-height: 600px;
+
+    animation: aparecer 0.6s ease;
+}
+
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateX(0);
+    }
+
+}
+
+
+/* ============================= */
+/* FOLHA */
+/* ============================= */
+
+.folha {
+    min-height: 600px;
+
+    padding: 55px 70px 100px;
+
+    background:
+        linear-gradient(
+            rgba(255, 250, 255, 0.98),
+            rgba(247, 235, 250, 0.98)
+        );
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.45);
+
+    position: relative;
+}
+
+
+.numero {
+    position: absolute;
+
+    top: 25px;
+
+    right: 35px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    color: #9b739f;
+}
+
+
+.capitulo {
+    color: #9b3a91;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+
+.folha h1 {
+    font-size: 40px;
+
+    color: #4b2853;
+
+    margin-bottom: 10px;
+
+    word-break: break-word;
+}
+
+
+.autor-leitura {
+    font-family: Arial, sans-serif;
+
+    color: #806084;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+.folha > .linha {
+    margin: 15px 0 25px;
+
+    width: 70px;
+}
+
+
+/* ============================= */
+/* CONTEÚDO DO LIVRO */
+/* ============================= */
+
+.conteudo-livro {
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    white-space: pre-wrap;
+
+    color: #3a263d;
+}
+
+
+/* ============================= */
+/* NAVEGAÇÃO */
+/* ============================= */
+
+.navegacao {
+    position: absolute;
+
+    bottom: 25px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    width: 90%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.navegacao button {
+    width: 45px;
+
+    height: 40px;
+
+    padding: 0;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+}
+
+
+.navegacao span {
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    color: #806084;
+}
+
+
+/* ============================= */
+/* CRIAR LIVRO */
+/* ============================= */
+
+.criar-container {
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+.folha-criar {
+    width: 100%;
+
+    max-width: 850px;
+
+    padding: 55px 70px;
+
+    background:
+        linear-gradient(
+            rgba(255, 250, 255, 0.98),
+            rgba(247, 235, 250, 0.98)
+        );
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+
+.folha-criar h1 {
+    font-size: 40px;
+
+    color: #4b2853;
+}
+
+
+.folha-criar label {
+    display: block;
+
+    margin-top: 25px;
+
+    margin-bottom: 8px;
+
+    color: #9b3a91;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.folha-criar input,
+.folha-criar textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    border:
+        1px solid #d4b6d8;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 16px;
+
+    color: #3a263d;
+
+    background: rgba(255, 255, 255, 0.8);
+}
+
+
+.folha-criar input:focus,
+.folha-criar textarea:focus {
+    border-color: #b6259e;
+}
+
+
+.folha-criar textarea {
+    min-height: 300px;
+
+    resize: vertical;
+
+    line-height: 1.7;
+}
+
+
+.botoes-criar {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+
+.botao-voltar {
+    background: #806084;
+}
+
+
+.botao-voltar:hover {
+    background: #9b739f;
+}
+
+
+/* ============================= */
+/* CELULAR */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .login-container {
+        padding: 15px;
+    }
+
+
+    .login-card {
+        padding: 45px 25px;
+    }
+
+
+    .login-card h1 {
+        font-size: 38px;
+    }
+
+
+    .subtitulo {
+        font-size: 11px;
+
+        letter-spacing: 4px;
+    }
+
+
+    .biblioteca {
+        padding: 20px 15px;
+    }
+
+
+    .biblioteca-topo {
+        padding: 35px 20px;
+    }
+
+
+    .biblioteca-topo h1 {
+        font-size: 38px;
+    }
+
+
+    .lista-livros {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 18px;
+    }
+
+
+    .livro-card {
+        width: 100%;
+    }
+
+
+    .mini-capa {
+        width: 100%;
+
+        min-height: 260px;
+
+        padding: 25px 15px;
+    }
+
+
+    .mini-capa h2 {
+        font-size: 21px;
+    }
+
+
+    .mini-subtitulo {
+        font-size: 7px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .mini-decoracao {
+        font-size: 14px;
+
+        letter-spacing: 4px;
+    }
+
+
+    .mini-coracao {
+        font-size: 23px;
+
+        margin-top: 15px;
+    }
+
+
+    .botao-ler {
+        padding: 10px 18px;
+
+        font-size: 13px;
+    }
+
+
+    .livro {
+        padding: 15px;
+    }
+
+
+    .pagina {
+        min-height: 650px;
+    }
+
+
+    .folha {
+        min-height: 650px;
+
+        padding: 45px 25px 90px;
+    }
+
+
+    .folha h1 {
+        font-size: 30px;
+    }
+
+
+    .conteudo-livro {
+        font-size: 16px;
+
+        line-height: 1.7;
+    }
+
+
+    .folha-criar {
+        padding: 45px 25px;
+    }
+
+
+    .folha-criar h1 {
+        font-size: 30px;
+    }
+
+
+    .botoes-criar {
+        flex-direction: column;
+    }
+
+
+    .botoes-criar button {
+        width: 100%;
+    }
+
+}
